@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: candara;
+  font-size: 1.3rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/*------- Header -------*/
+
+header {
+  width: 100%;
+  height: 120px;
+  top: 0px;
+  color: black;
+  background-color: white;
+  padding: 15px 75px 15px 15px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+}
+
+h1 {
+  font-size: min(30px, 15vw);
+
+}
+
+/*Classe que está escondida mas define o modo escuro*/
+.dkm header,
+.dkm .navCard,
+.dkm footer,
+.dkm main,
+.dkm #botao1,
+.dkm #opiniao,
+.dkm #botao,
+.dkm .h1,
+.dkm .a123,
+.dkm .character,
+.dkm .character .name,
+.dkm #insta1,
+.dkm #email,
+.dkm .Parte1{
+  background-color: black;
+  color: white;
+}
+
+/*Igual ao de cima mas troca a cor da imagem apenas*/
+.dkm #darkMode {
+  filter: invert(1);
+}
+
+/*Botões do header*/
+.navCard {
+  padding: 0px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.navCard:hover {
+  color: gray;
+}
+
+#darkMode {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  transition: transform 0.5s, filter 1s;
+  flex-wrap: wrap;
+}
+
+#darkMode:hover {
+  transform: rotate(360deg);
+}
+
+/*------- Main -------*/
+
+main {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.character {
+  width: 150px;
+  height: 220px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.character img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.character .name {
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #333;
+
+}
+
+.card-container {
+  display: flex;
+  grid-template-columns: 350px 350px 350px;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: max(25px, 5vw);
+}
+
+.card-container div {
+  flex: 1 1 350px;
+}
+
+figure {
+  width: 35px;
+  background: rgb(red, green, blue);
+  border-radius: 10px 10px 0 0;
+}
+
+#imagem {
+  width: 350px;
+}
+
+
+.Parte1 {
+  width: 100%;
+  min-height: 640px;
+  padding-top: 200px;
+
+  color: black;
+  text-align: center;
+
+
+  background-image: url(bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Parte1 div {
+  flex: 1 1 300px;
+}
+
+.titulo {
+  font-size: min(60px, 10vw);
+  font-weight: bold;
+}
+
+.txt {
+  font-size: min(30px, 10vw);
+  font-weight: bold;
+}
+
+.titulo1 {
+  font-size: min(50px, 10vw);
+  font-weight: bold;
+}
+
+.txt1 {
+  font-size: min(30px, 10vw);
+  font-weight: bold;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  align-items: stretch;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  flex-wrap: wrap;
+
+
+}
+
+.card div {
+  flex: 1 1 300px;
+}
+
+.title {
+  color: grey;
+  font-size: min(18px, 10vw);
+}
+
+#botao1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  filter: invert(1);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  z-index: 3;
+
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+
+}
+
+#botao1:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.Parte1 {
+  width: 100%;
+  height: 400px;
+  padding: 100px 0px 0px 0px;
+
+  color: black;
+  text-align: center;
+}
+
+#opiniao {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+
+  font-size: 16px;
+  resize: none;
+}
+
+.opiniao {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  color: black;
+}
+
+#imagem {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  color: black;
+}
+
+#botao {
+  background-color: black;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+
+  cursor: pointer;
+  font-size: min(16px, 10vw);
+
+
+}
+
+.card .p {
+  font-size: min(30px, 10vw);
+}
+
+.margin {
+  margin: 24px 0;
+}
+
+footer {
+  width: 100%;
+}
+
+.tamanho {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 3.5rem;
+  flex-wrap: wrap;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  flex-wrap: wrap;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+  flex-wrap: wrap;
+}
+
+
+#footer_social_media .footer-link:hover {
+  flex-wrap: wrap;
+  opacity: 0.8;
+}
+
+
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+#input_group input {
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: #7f37c9;
+  border: none;
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .card,
+  header,
+  #botao1,
+  .titulo,
+  .txt,
+  .navCard,
+  .Parte1,
+  .card-container{
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 50px) {
+
+  .card,
+  header,
+  #botao1,
+  .titulo,
+  .txt,
+  .navCard,
+  .Parte1,
+  .card-container{
+    width: 100%;
+  }
+}
+
+
+.Parte1 {
+  width: 100%;
+  height: 400px;
+  padding: 100px 0px 0px 0px;
+
+  color: black;
+  text-align: center;
+}
+
+.Parte1 div {
+  flex: 1 1 300px;
+}
+
+img {
+  width: 42px;
+  height: 42px;
+}

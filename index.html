@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho faculdade</title>
+
+    <link rel="stylesheet" href="styleIndex.css">
+    <script src="script.js" defer charset="UTF-8"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Atividade AV2</h1>
+
+        <div class="botoes">
+            <a class="navCard" href="index.html">Início</a>
+            <a class="navCard" href="galeria.html">Galeria</a>
+            <a class="navCard" href="sobre.html">Sobre</a>
+            <img src="Escuro.png" alt="Escuro" id="darkMode" onclick="darkMode()">
+        </div>
+    </header>
+
+    <main>
+        <div class="Parte1">
+            <h2 class="titulo">Atividade AV2</h2>
+            <p class="txt">Página inicial de apresentação dos membros do projeto</p>
+        </div>
+
+        <div class="Parte2">
+            <p class="txt">
+                Valendo sete pontos da AV2, esse é um trabalho com o objetivo de fazer um site com três páginas e no
+                mínimo três manipulações de javaScript para elas.<br><br>
+
+                Nessa página mostraremos informações como se fosse um currículo.<br><br>
+                Informações como: Nome, Idade, Escolaridade, Competências, etc.</p>
+        </div>
+
+        <div class="Parte3">
+            <h2 class="titulo">Integrantes</h2>
+            <p id="pp4">Clique no card para mostrar os outros integrantes<br><br></p>
+            
+            <div class="integrantes_container">
+
+                <div class="integrante" id="i1" onclick="mudar_integrantes(i1)">
+                    <img src="ave.jpg" alt="Foto do Integrante 1">
+                    <h3>Josafá Lima</h3>
+                    <p>19 anos, cursando Engenharia da Computação no 3º período na Uninassau. Conhecimento em várias
+                        linguagens de programação e desenvolvimento de jogos no Construct 2. Gosto de dormir, comer,
+                        dinheiro, não trabalhar e jogar.
+                    </p>
+                </div>
+
+                <div class="integrante" id="i2" onclick="mudar_integrantes(i2)">
+                    <img src="canguru.jpg" alt="Foto do Integrante 1">
+                    <h3>Cláudio Cordeiro</h3>
+                    <p>Estudante do 3º período de engenharia da computação na uninassau. Tem experiência com programação
+                        web e programação de jogos digitais. É fã de dormir, almoçar e pesquisar coisas de história
+                        aleatória no wikipédia.
+                    </p>
+                </div>
+
+                <div class="integrante" id="i3" onclick="mudar_integrantes(i3)">
+                    <img src="gato.webp" alt="Foto do Integrante 2">
+                    <h3>Kaio Victor</h3>
+                    <p>20 anos, estudante do 3º período de Engenharia da Computação na Uninassau. Conhecimento em pelo
+                        menos 2 linguagens de programação(ou não), gosto de ler livros, comer coxinha e assistir
+                        documentários de canais genéricos de história no youtube</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Atividade AV2</h1>
+                <p>Esse site é maneiro.</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com" class="footer-link" id="insta1">
+                        <img src="Insta.png" class="tamanho" </a>
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://br.linkedin.com" class="footer-link" id="insta1">
+                        <img src="Linkedin.png" class="tamanho" </a>
+                        <i class="fa-brands linkedin-f"></i>
+                    </a>
+
+                    <a href="https://web.whatsapp.com" class="footer-link" id="insta1"><img
+                            src="Zap.png" class="tamanho" </a>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>Insira o seu e-mail para ser notificado sobre nossas novidades.</p>
+
+                <div id="input_group">
+                    <input type="email" id="email" oninput="letra_minuscula()">
+                    <button onclick="subscribe()"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>

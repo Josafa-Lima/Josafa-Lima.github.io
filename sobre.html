@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho faculdade</title>
+
+    <link rel="stylesheet" href="styleSobre.css">
+    <script src="script.js" defer charset="UTF-8"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Atividade AV2</h1>
+
+        <div class="botoes">
+            <a href="index.html" class="navCard">Início</a>
+            <a href="galeria.html" class="navCard">Galeria</a>
+            <a href="sobre.html" class="navCard">Sobre</a>
+            <img src="Escuro.png" alt="Escuro" id="darkMode" onclick="darkMode()">
+        </div>
+
+    </header>
+    <main>
+
+        <body>
+
+            <div class="Parte1">
+
+                <h2 class="titulo">Saiba mais sobre nós</h2>
+                <p class="txt">Acesse nossos links nos cards abaixo</p>
+            </div>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="ave.jpg" class="img2" alt="foto">
+                    <h1>Josafá</h1>
+                    <p class="title"> Aluno</p>
+                    <p class="p">Uninassau com muito orgulho</p>
+                    <div class="cosio">
+                        <a href="https://www.instagram.com"><img src="Insta.png" class="img1"></a>
+                        <a href="https://br.linkedin.com"><img src="Linkedin.png" class="img1"></a>
+                        <a href="https://web.whatsapp.com"><img src="Zap.png" class="img1"></a>
+                    </div>
+                    <p><button id="botao1" onclick="butao1()">GitHub</button></p>
+
+                </div>
+                <div class="card">
+                    <img src="canguru.jpg" class="img2" alt="foto">
+                    <h1>Cláudio</h1>
+                    <p class="title">Aluno</p>
+                    <p class="p">Uninassau com muito orgulho</p>
+                    <div class="cosio">
+                        <a href="https://www.instagram.com"><img src="Insta.png" class="img1"></a>
+                        <a href="https://br.linkedin.com"><img src="Linkedin.png" class="img1"></a>
+                        <a href="https://web.whatsapp.com"><img src="Zap.png" class="img1"></a>
+                    </div>
+                    <p><button id="botao1"  onclick="butao2()">GitHub</button></p>
+                </div>
+                <div class="card">
+                    <img src="gato.webp" class="img2" alt="foto">
+                    <h1>Kaio</h1>
+                    <p class="title">Aluno</p>
+                    <p class="p">Uninassau com muito orgulho</p>
+                    <div class="cosio">
+                        <a href="https://www.instagram.com"><img src="Insta.png" class="img1"></a>
+                        <a href="https://br.linkedin.com"><img src="Linkedin.png" class="img1"></a>
+                        <a href="https://web.whatsapp.com"><img src="Zap.png" class="img1"></a>
+                    </div>
+                    <p><button id="botao1" onclick="butao3()">GitHub</button></p>
+                </div>
+            </div>
+
+            <div class="Parte1">
+                <h2 class="titulo1">Sua opinião é importante para nós</h2>
+                <p class="txt1">Nos informe o que podemos melhorar em nossos currículos ou no site</p>
+            </div>
+
+            <p class="opiniao"><b>Deixe aqui sua opinião</b></p>
+            <textarea id="opiniao" name="opiniao"></textarea>
+            <br>
+            <input type="hidden" id="enviar" value="Opinião enviada">
+            <button id="botao" onclick="subscribe1()">Enviar</button>
+            <p id="demo"></p>
+            <p></p>
+
+
+            <footer>
+                <div id="footer_content">
+                    <div id="footer_contacts">
+                        <h1>Atividade AV2</h1>
+                        <p>Esse site é maneiro.</p>
+
+                        <div id="footer_social_media">
+                            <a href="https://www.instagram.com" class="footer-link" id="insta1">
+                                <img src="Insta.png" class="tamanho" </a>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="https://br.linkedin.com" class="footer-link" id="insta1">
+                                <img src="Linkedin.png" class="tamanho" </a>
+                                <i class="fa-brands linkedin-f"></i>
+                            </a>
+
+                            <a href="https://web.whatsapp.com" class="footer-link" id="insta1"><img
+                                    src="Zap.png" class="tamanho" </a>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="footer_subscribe">
+                        <h3>Inscreva-se</h3>
+                        <p>Insira o seu e-mail para ser notificado sobre nossas novidades.</p>
+
+                        <div id="input_group">
+                            <input type="email" id="email" oninput="letra_minuscula()">
+                            <button onclick="subscribe()"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer_copyright">
+                    &#169
+                    2024 all rights reserved
+                </div>
+            </footer>
+        </body>
+    </main>
+
+</html>

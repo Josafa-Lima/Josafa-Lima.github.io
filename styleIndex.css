@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: candara;
+  font-size: 1.3rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/*------- Header -------*/
+
+header {
+  width: 100%;
+  height: 120px;
+  top: 0px;
+  color: black;
+  background-color: white;
+  padding: 15px 75px 15px 15px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+}
+
+h1 {
+  font-size: min(30px, 15vw);
+}
+
+/*Classe que está escondida mas define o modo escuro*/
+.dkm header,
+.dkm footer,
+.dkm main,
+.dkm .navCard,
+.dkm #botao1,
+.dkm #opiniao,
+.dkm #botao,
+.dkm .h1,
+.dkm .a123,
+.dkm .character,
+.dkm .character .name,
+.dkm #insta1,
+.dkm #email,
+.dkm .integrante1,
+.dkm .nome_integrante,
+.dkm .integrante,
+.dkm .integrantes_container,
+.dkm .Parte3,
+.dkm .Parte1{
+  background-color: black;
+  color: white;
+}
+
+/*Igual ao de cima mas troca a cor da imagem apenas*/
+.dkm #darkMode {
+  filter: invert(1);
+}
+
+/*Botões do header*/
+.navCard {
+  padding: 0px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.navCard:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#darkMode {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  transition: transform 0.5s, filter 1s;
+  flex-wrap: wrap;
+}
+
+#darkMode:hover {
+  transform: rotate(360deg);
+}
+
+/*------- Main -------*/
+
+main {
+  background-color: white;
+  color: black;
+}
+
+.Parte1 {
+  width: 100%;
+  min-height: 640px;
+  padding-top: 200px;
+
+  color: black;
+  text-align: center;
+
+  background-image: url(bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.txt {
+  font-size: min(30px, 4.5vw);
+  font-weight: bold;
+}
+
+.Parte2 {
+  width: 80%;
+  height: 340px;
+  padding: 0px 30px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.Parte3 {
+  padding: 30px;
+  height: 640px;
+  color: black;
+  background-image: url(bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.Parte3 h2 {
+  
+  font-size: 50px;
+  font-weight: bold;
+  flex-wrap: wrap;
+
+}
+
+#pp3 {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.integrante {
+  width: 800px;
+  height: 320px;
+  background-color: white;
+  margin: 0px auto;
+  display: block;
+  flex-wrap: wrap;
+
+
+}
+
+.integrante:hover {
+  cursor: pointer;
+}
+
+.integrante img {
+  float: left;
+}
+
+.integrante h3 {
+  font-size: min(36px, 3.8vw);
+  font-weight: bold;
+
+  flex-wrap: wrap;
+
+}
+
+.integrante p {
+  font-size: min(27px, 3.7vw);
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+#i2,
+#i3 {
+  display: none;
+}
+
+
+/*------- Footer -------*/
+
+footer {
+  width: 100%;
+}
+
+.tamanho {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 3.5rem;
+  flex-wrap: wrap;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  flex-wrap: wrap;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+  flex-wrap: wrap;
+}
+
+
+#footer_social_media .footer-link:hover {
+  flex-wrap: wrap;
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#linkedin {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+#input_group input {
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: #7f37c9;
+  border: none;
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .card,
+  header,
+  #botao1,
+  .titulo,
+  .txt,
+  .navCard,
+  .integrante,
+  .integrante,
+  .integrante p,
+  .integrante,
+  .integrante h3 {
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 50px) {
+
+  .card,
+  header,
+  #botao1,
+  .titulo,
+  .txt,
+  .navCard,
+  .integrante,
+  .integrante,
+  .integrante p,
+  .integrante,
+  .integrante h3 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .card-container {
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 50px) {
+  .card-container {
+    width: 100%;
+  }
+}

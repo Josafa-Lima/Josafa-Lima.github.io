@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho faculdade</title>
+    <link rel="stylesheet" href="styleGaleria.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Atividade AV2</h1>
+
+        <div class="botoes">
+            <a href="index.html" class="navCard">Início</a>
+            <a href="galeria.html" class="navCard">Galeria</a>
+            <a href="sobre.html" class="navCard">Sobre</a>
+            <img src="Escuro.png" alt="Escuro" id="darkMode" onclick="darkMode()">
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="Parte1">
+            <h2 class="titulo">Personagens da Disney</h2>
+            <p class="txt">Atualize a página para poder ver mais personagens!</p>
+        </div>
+
+        <div class="container" id="character-container"></div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Atividade AV2</h1>
+                <p>Esse site é maneiro.</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com" class="footer-link" id="insta1">
+                        <img src="Insta.png" class="tamanho" </a>
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://br.linkedin.com" class="footer-link" id="insta1">
+                        <img src="Linkedin.png" class="tamanho" </a>
+                        <i class="fa-brands linkedin-f"></i>
+                    </a>
+
+                    <a href="https://web.whatsapp.com" class="footer-link" id="insta1"><img
+                            src="Zap.png" class="tamanho" </a>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>Insira o seu e-mail para ser notificado sobre nossas novidades.</p>
+
+                <div id="input_group">
+                    <input type="email" id="email" oninput="letra_minuscula">
+                    <button onclick="subscribe()"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
